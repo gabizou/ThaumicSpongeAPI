@@ -24,6 +24,7 @@
  */
 package com.gabizou.thaumicsponge.api.entity;
 
+import com.gabizou.thaumicsponge.api.data.ThaumicKeys;
 import com.gabizou.thaumicsponge.api.data.type.Aspect;
 import com.gabizou.thaumicsponge.api.data.manipulator.mutable.AuraNodeData;
 import com.gabizou.thaumicsponge.api.data.type.AuraNodeType;
@@ -38,14 +39,24 @@ public interface AuraNode extends Entity {
      *
      * @return The aura node data
      */
-    AuraNodeData auraNodeData();
+    default AuraNodeData auraNodeData() {
+        return get(AuraNodeData.class).get();
+    }
 
-    Value<Boolean> stabilized();
+    default Value<Boolean> stabilized() {
+        return getValue(ThaumicKeys.AURA_NODE_IS_STABLE).get();
+    }
 
-    Value<AuraNodeType> nodeType();
+    default Value<AuraNodeType> nodeType() {
+        return getValue(ThaumicKeys.AURA_NODE_TYPE).get();
+    }
 
-    Value<Aspect> aspect();
+    default Value<Aspect> aspect() {
+        return getValue(ThaumicKeys.AURA_NODE_ASPECT).get();
+    }
 
-    MutableBoundedValue<Integer> nodeSize();
+    default MutableBoundedValue<Integer> nodeSize() {
+        return getValue(ThaumicKeys.AURA_NODE_SIZE).get();
+    }
 
 }

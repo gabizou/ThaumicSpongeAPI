@@ -19,7 +19,6 @@ buildscript {
 apply plugin: 'java'
 apply plugin: 'maven'
 apply plugin: 'license'
-apply plugin: 'checkstyle'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'signing'
@@ -162,16 +161,6 @@ license {
     mapping {
         java = 'SLASHSTAR_STYLE'
     }
-}
-
-checkstyle {
-    configProperties = [
-            "name"        : project.name,
-            "organization": project.organization,
-            "url"         : project.url,
-            "year"        : project.inceptionYear
-    ]
-    configFile = file("checkstyle.xml")
 }
 
 
