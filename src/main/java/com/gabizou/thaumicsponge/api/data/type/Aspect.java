@@ -22,7 +22,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.gabizou.thaumicsponge.api;
+package com.gabizou.thaumicsponge.api.data.type;
 
 import org.spongepowered.api.CatalogType;
 import org.spongepowered.api.block.BlockType;

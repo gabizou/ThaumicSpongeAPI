@@ -47,11 +47,6 @@ repositories {
 
 dependencies {
     compile 'org.spongepowered:spongeapi:3.1.0-SNAPSHOT'
-    testCompile 'junit:junit:4.11'
-    testCompile 'org.powermock:powermock-module-junit4:1.5.2'
-    testCompile 'org.powermock:powermock-api-mockito:1.5.2'
-    testCompile "org.mockito:mockito-core:1.+"
-    testCompile 'commons-io:commons-io:2.4'
 }
 
 // Generates javadoc.jar
@@ -69,12 +64,12 @@ task sourceJar(type: Jar) {
 }
 
 ext {
-    projectName = 'RpgCommon-API'
-    inceptionYear = '2014'
+    projectName = 'ThaumicSpongeAPI'
+    inceptionYear = '2016'
     packaging = 'jar'
-    url = 'http://afterkraft.com/'
-    description = "Common API for RpgCommon."
-    organization = 'AfterKraft KraftDev Team'
+    url = 'https://gabizou.com/'
+    description = "API bridge for interfacing with Thaumcraft for plugins written with SpongeAPI"
+    organization = 'gabizou'
     pomFile = file("${project.projectDir}/pom.xml")
     buildNumber = project.hasProperty("buildNumber") ? buildNumber : '0'
     ciSystem = project.hasProperty("ciSystem") ? ciSystem : 'unknown'
@@ -113,12 +108,12 @@ uploadArchives {
             project {
                 name project.archivesBaseName
                 packaging 'jar'
-                description 'Common API for RpgCommon.'
-                url 'http://afterkraft.com/'
+                description 'SpongeAPI bridge for Thaumcraft.'
+                url 'https://gabizou.com/'
                 scm {
-                    url 'https://github.com/AfterKraft/RpgCommon-API'
+                    url 'https://github.com/gabizou/ThaumicSpongeAPI'
                     connection 'git'
-                    developerConnection 'git@github.com:AfterKraft/RpgCommon-API.git'
+                    developerConnection 'git@github.com:gabizou/ThaumicSpongeAPI.git'
                 }
                 licenses {
                     license {

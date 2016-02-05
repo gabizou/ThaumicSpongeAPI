@@ -22,7 +22,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.gabizou.thaumicsponge.api;
+package com.gabizou.thaumicsponge.api.data.type;
 
 /**
  * A catalog collection of {@link Aspect}s.

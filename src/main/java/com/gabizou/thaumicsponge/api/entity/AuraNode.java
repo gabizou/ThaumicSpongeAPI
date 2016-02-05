@@ -24,7 +24,7 @@
  */
 package com.gabizou.thaumicsponge.api.entity;
 
-import com.gabizou.thaumicsponge.api.Aspect;
+import com.gabizou.thaumicsponge.api.data.type.Aspect;
 import com.gabizou.thaumicsponge.api.data.manipulator.mutable.AuraNodeData;
 import com.gabizou.thaumicsponge.api.data.type.AuraNodeType;
 import org.spongepowered.api.data.value.mutable.MutableBoundedValue;

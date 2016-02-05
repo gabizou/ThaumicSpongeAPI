@@ -27,7 +27,7 @@ package com.gabizou.thaumicsponge.api.data;
 import static org.spongepowered.api.data.DataQuery.of;
 import static org.spongepowered.api.data.key.KeyFactory.makeSingleKey;
 
-import com.gabizou.thaumicsponge.api.Aspect;
+import com.gabizou.thaumicsponge.api.data.type.Aspect;
 import com.gabizou.thaumicsponge.api.data.type.AuraNodeType;
 import org.spongepowered.api.data.key.Key;
 import org.spongepowered.api.data.value.mutable.MutableBoundedValue;
