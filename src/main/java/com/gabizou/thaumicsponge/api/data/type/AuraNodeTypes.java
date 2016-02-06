@@ -24,7 +24,7 @@
  */
 package com.gabizou.thaumicsponge.api.data.type;
 
-public class AuraNodeTypes {
+public final class AuraNodeTypes {
 
     public static final AuraNodeType NORMAL = null;
     public static final AuraNodeType DARK = null;

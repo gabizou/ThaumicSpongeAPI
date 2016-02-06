@@ -33,7 +33,7 @@ import org.spongepowered.api.data.key.Key;
 import org.spongepowered.api.data.value.mutable.MutableBoundedValue;
 import org.spongepowered.api.data.value.mutable.Value;
 
-public class ThaumicKeys {
+public final class ThaumicKeys {
 
     public static final Key<Value<AuraNodeType>> AURA_NODE_TYPE;
     public static final Key<Value<Aspect>> AURA_NODE_ASPECT;
@@ -45,6 +45,9 @@ public class ThaumicKeys {
         AURA_NODE_ASPECT = makeSingleKey(Aspect.class, Value.class, of("Aura", "Aspect"));
         AURA_NODE_IS_STABLE = makeSingleKey(Boolean.class, Value.class, of("Aura", "Stable"));
         AURA_NODE_SIZE = makeSingleKey(Integer.class, MutableBoundedValue.class, of("Aura", "Size"));
+    }
+
+    private ThaumicKeys() {
     }
 
 }

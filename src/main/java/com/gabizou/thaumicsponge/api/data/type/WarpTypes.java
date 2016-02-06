@@ -24,7 +24,7 @@
  */
 package com.gabizou.thaumicsponge.api.data.type;
 
-public class WarpTypes {
+public final class WarpTypes {
 
     public static final WarpType NORMAL = null;
     public static final WarpType PERMANENT = null;
