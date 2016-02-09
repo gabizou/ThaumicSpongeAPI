@@ -22,15 +22,18 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.gabizou.thaumicsponge.api.world.biome;
+package com.gabizou.thaumicsponge.api.data.manipulator.mutable.entity;
 
-import org.spongepowered.api.world.biome.BiomeType;
+import com.gabizou.thaumicsponge.api.data.manipulator.immutable.entity.ImmutableWarpData;
+import com.gabizou.thaumicsponge.api.data.type.WarpType;
+import org.spongepowered.api.data.manipulator.DataManipulator;
+import org.spongepowered.api.data.value.mutable.MapValue;
 
-public class ThaumicBiomeTypes {
+/**
+ *
+ */
+public interface WarpData extends DataManipulator<WarpData, ImmutableWarpData> {
 
-    public static final BiomeType TAINT = null;
-    public static final BiomeType EERIE = null;
-    public static final BiomeType MAGICAL_FOREST = null;
-    public static final BiomeType ELDRITCH_LANDS = null;
+    MapValue<WarpType, Integer> warp();
 
 }
